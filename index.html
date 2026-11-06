@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- This line makes the page fit phone screens (needed for responsive design) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="page">
+
+    <!-- ===== NAVIGATION BAR ===== -->
+    <nav class="navbar">
+        <div class="brand">Web Portfolio</div>
+        <div>
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#others">Others</a>
+            <button class="button" id="modeButton" onclick="toggleMode()">Light Mode</button>
+        </div>
+    </nav>
+    <div class="stripe"></div>
+
+    <!-- ===== 1. HEADER / NAME ===== -->
+    <div class="hero" id="home">
+        <!-- EDIT: replace the src with your own photo, example: src="images/me.jpg" -->
+        <img class="profile" src="https://placehold.co/300x300/ff8c1a/0b1220?text=Your+Photo" alt="Profile Picture">
+        <div class="hero-text">
+            <h1>Dutch Estipona</h1> <!-- EDIT: your name -->
+            <p class="job-title">Aspiring Web Developer</p> <!-- EDIT: your dream job -->
+            <p class="text">An aspiring IT professional with a passion for technology, creativity, and continuous learning. Always eager to explore new ideas, develop new skills, and turn ideas into meaningful projects. <!-- EDIT --></p>
+            <button class="button" onclick="sayHello()">Hire Me</button>
+            <a class="button" href="#about">Learn More</a>
+        </div>
+    </div>
+
+    <main class="container">
+
+        <!-- ===== 2-3. INFORMATION ABOUT YOU / PROFESSIONAL SUMMARY ===== -->
+        <div id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <p class="text">EDIT: Write your professional summary here (2-3 sentences).</p>
+            <div class="row">
+                <div class="col">
+                    <p class="sub-title">Personal Details</p>
+                    <!-- EDIT: change the values, delete extra rows -->
+                    <table border="1" width="100%">
+                        <tr><td class="cell">Full Name</td><td class="cell">Dutch Estipona</td></tr>
+                        <tr><td class="cell">Age</td><td class="cell">19</td></tr>
+                        <tr><td class="cell">Birth of Date</td><td class="cell">September 2, 2007</td></tr>
+                        <tr><td class="cell">Gender</td><td class="cell">Male</td></tr>
+                        <tr><td class="cell">Civil Status</td><td class="cell">Single</td></tr>
+                        <tr><td class="cell">Height</td><td class="cell">163 cm</td></tr>
+                        <tr><td class="cell">Weight</td><td class="cell">50 kg</td></tr>
+                        <tr><td class="cell">Nationality</td><td class="cell">Filipino</td></tr>
+                        <tr><td class="cell">Religion</td><td class="cell">Catholic</td></tr>
+                        <tr><td class="cell">Address</td><td class="cell">Manggalang Kiling, Sariaya, Philippines</td></tr>
+                    </table>
+                </div>
+                <div class="col">
+                    <p class="sub-title">Preferred Skills</p>
+                    <!-- EDIT: replace the skills, delete extra items -->
+                    <ul class="list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Web Design</li>
+                        <li>Digital Design</li>
+                        <li>Problem Solving</li>
+                        <li>Teamwork</li>
+                        <li>Communication</li>
+                        <li>Time Management</li>
+                        <li>Microsoft Office</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== 4. EDUCATION ===== -->
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <!-- EDIT: replace the details, delete extra rows -->
+            <table border="1" width="100%">
+                <tr><th class="head-cell">Level</th><th class="head-cell">School</th><th class="head-cell">Course / Track</th><th class="head-cell">Address</th><th class="head-cell">Year</th></tr>
+                <tr><td class="cell">Preschool</td><td class="cell">School Name 1</td><td class="cell">N/A</td><td class="cell">Town, Province</td><td class="cell">0000</td></tr>
+                <tr><td class="cell">Kindergarten</td><td class="cell">School Name 2</td><td class="cell">N/A</td><td class="cell">Town, Province</td><td class="cell">0000</td></tr>
+                <tr><td class="cell">Elementary</td><td class="cell">School Name 3</td><td class="cell">N/A</td><td class="cell">Town, Province</td><td class="cell">0000 - 0000</td></tr>
+                <tr><td class="cell">Junior High School</td><td class="cell">School Name 4</td><td class="cell">N/A</td><td class="cell">Town, Province</td><td class="cell">0000 - 0000</td></tr>
+                <tr><td class="cell">Senior High School</td><td class="cell">School Name 5</td><td class="cell">Your Track</td><td class="cell">Town, Province</td><td class="cell">0000 - 0000</td></tr>
+                <tr><td class="cell">College</td><td class="cell">School Name 6</td><td class="cell">Your Course</td><td class="cell">Town, Province</td><td class="cell">Ongoing</td></tr>
+                <tr><td class="cell">Vocational</td><td class="cell">School Name 7</td><td class="cell">Your Course</td><td class="cell">Town, Province</td><td class="cell">0000</td></tr>
+                <tr><td class="cell">Short Course</td><td class="cell">School Name 8</td><td class="cell">Course Name</td><td class="cell">Online</td><td class="cell">0000</td></tr>
+                <tr><td class="cell">Training</td><td class="cell">School Name 9</td><td class="cell">Training Name</td><td class="cell">Town, Province</td><td class="cell">0000</td></tr>
+                <tr><td class="cell">Graduate Studies</td><td class="cell">School Name 10</td><td class="cell">Your Course</td><td class="cell">Town, Province</td><td class="cell">0000</td></tr>
+            </table>
+        </div>
+
+        <!-- ===== 5. EXCELLENCE / AWARDS ===== -->
+        <div class="section">
+            <h2 class="section-title">Excellence / Awards</h2>
+            <div class="row">
+                <div class="col">
+                    <p class="sub-title">Academic Awards</p>
+                    <!-- EDIT: replace with your awards, delete extra items -->
+                    <ul class="list">
+                        <li>With Highest Honors - Elementary</li>
+                        <li>With High Honors - Junior High</li>
+                        <li>With Honors - Senior High</li>
+                        <li>Top 1 - Section Ranking</li>
+                        <li>Dean's Lister</li>
+                        <li>Best in Mathematics</li>
+                        <li>Best in Science</li>
+                        <li>Perfect Attendance</li>
+                        <li>Quiz Bee Champion</li>
+                        <li>Best Capstone Project</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <p class="sub-title">Non-Academic Awards</p>
+                    <!-- EDIT: replace with your awards, delete extra items -->
+                    <ul class="list">
+                        <li>Basketball League Champion</li>
+                        <li>Chess Tournament - 2nd Place</li>
+                        <li>Esports Tournament Finalist</li>
+                        <li>Dance Contest - 1st Place</li>
+                        <li>Singing Contest - Finalist</li>
+                        <li>Poster Making - 3rd Place</li>
+                        <li>Best Photographer</li>
+                        <li>Youth Leadership Award</li>
+                        <li>Outstanding Volunteer</li>
+                        <li>Coding Contest Participant</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== 6. HOBBIES ===== -->
+        <div class="section">
+            <h2 class="section-title">Hobbies</h2>
+            <!-- EDIT: change the title and image of each card, delete extra cards -->
+            <div class="row">
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/1f3a5f/ffffff?text=Hobby+1" alt="Hobby 1" width="100%"><p class="card-title">Playing Basketball</p></div>
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/1f3a5f/ffffff?text=Hobby+2" alt="Hobby 2" width="100%"><p class="card-title">Playing Online Games</p></div>
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/1f3a5f/ffffff?text=Hobby+3" alt="Hobby 3" width="100%"><p class="card-title">Coding</p></div>
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/1f3a5f/ffffff?text=Hobby+4" alt="Hobby 4" width="100%"><p class="card-title">Working Out</p></div>
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/1f3a5f/ffffff?text=Hobby+5" alt="Hobby 5" width="100%"><p class="card-title">Playing Guitar</p></div>
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/1f3a5f/ffffff?text=Hobby+6" alt="Hobby 6" width="100%"><p class="card-title">Watching Movies</p></div>
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/1f3a5f/ffffff?text=Hobby+7" alt="Hobby 7" width="100%"><p class="card-title">Photography</p></div>
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/1f3a5f/ffffff?text=Hobby+8" alt="Hobby 8" width="100%"><p class="card-title">Reading Books</p></div>
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/1f3a5f/ffffff?text=Hobby+9" alt="Hobby 9" width="100%"><p class="card-title">Biking</p></div>
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/1f3a5f/ffffff?text=Hobby+10" alt="Hobby 10" width="100%"><p class="card-title">Cooking</p></div>
+            </div>
+        </div>
+
+        <!-- ===== 7. WORK EXPERIENCE ===== -->
+        <div class="section">
+            <h2 class="section-title">Work Experience</h2>
+            <!-- EDIT: change the job, company, and year of each card, delete extra cards -->
+            <div class="row">
+                <div class="card"><p class="card-title">Part-time Cashier</p><p class="text">Company Name | 0000 - 0000</p></div>
+                <div class="card"><p class="card-title">Service Crew</p><p class="text">Company Name | 0000 - 0000</p></div>
+                <div class="card"><p class="card-title">Freelance Web Designer</p><p class="text">Self-employed | 0000 - Present</p></div>
+                <div class="card"><p class="card-title">Tutor</p><p class="text">Company Name | 0000 - 0000</p></div>
+                <div class="card"><p class="card-title">Delivery Rider</p><p class="text">Company Name | 0000 - 0000</p></div>
+                <div class="card"><p class="card-title">Computer Shop Attendant</p><p class="text">Shop Name | 0000 - 0000</p></div>
+                <div class="card"><p class="card-title">Graphic Layout Artist</p><p class="text">Company Name | 0000 - 0000</p></div>
+                <div class="card"><p class="card-title">Office Assistant (OJT)</p><p class="text">Company Name | 0000</p></div>
+                <div class="card"><p class="card-title">Barista</p><p class="text">Cafe Name | 0000 - 0000</p></div>
+                <div class="card"><p class="card-title">Family Business Helper</p><p class="text">Family Store | 0000 - Present</p></div>
+            </div>
+        </div>
+
+        <!-- ===== 8. PROJECTS ACCOMPLISHED ===== -->
+        <div class="section">
+            <h2 class="section-title">Projects Accomplished</h2>
+            <!-- EDIT: change the image, title, and link (href) of each card, delete extra cards -->
+            <div class="row">
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/ff8c1a/0b1220?text=Project+1" alt="Project 1" width="100%"><p class="card-title">Personal Portfolio Website</p><a class="button" href="#">View Project</a></div>
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/ff8c1a/0b1220?text=Project+2" alt="Project 2" width="100%"><p class="card-title">Calculator App</p><a class="button" href="#">View Project</a></div>
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/ff8c1a/0b1220?text=Project+3" alt="Project 3" width="100%"><p class="card-title">To-Do List</p><a class="button" href="#">View Project</a></div>
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/ff8c1a/0b1220?text=Project+4" alt="Project 4" width="100%"><p class="card-title">Tic-Tac-Toe Game</p><a class="button" href="#">View Project</a></div>
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/ff8c1a/0b1220?text=Project+5" alt="Project 5" width="100%"><p class="card-title">School Website Design</p><a class="button" href="#">View Project</a></div>
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/ff8c1a/0b1220?text=Project+6" alt="Project 6" width="100%"><p class="card-title">Logo Design</p><a class="button" href="#">View Project</a></div>
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/ff8c1a/0b1220?text=Project+7" alt="Project 7" width="100%"><p class="card-title">Poster Design</p><a class="button" href="#">View Project</a></div>
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/ff8c1a/0b1220?text=Project+8" alt="Project 8" width="100%"><p class="card-title">Quiz Game</p><a class="button" href="#">View Project</a></div>
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/ff8c1a/0b1220?text=Project+9" alt="Project 9" width="100%"><p class="card-title">Online Store Mockup</p><a class="button" href="#">View Project</a></div>
+                <div class="card"><img class="card-img" src="https://placehold.co/400x250/ff8c1a/0b1220?text=Project+10" alt="Project 10" width="100%"><p class="card-title">Mobile App Design</p><a class="button" href="#">View Project</a></div>
+            </div>
+        </div>
+
+        <!-- ===== OTHERS (SOMETHING SPECIAL): GALLERY, MOTTO, PRINT ===== -->
+        <div id="others" class="section">
+            <h2 class="section-title">Others</h2>
+
+            <p class="sub-title">My Photo Gallery (click a small photo)</p>
+            <div class="center">
+                <img class="big-image" id="bigImage" src="https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+1" alt="Big Photo">
+                <br>
+                <!-- EDIT: replace BOTH links in each photo with your own image, example: src="images/photo1.jpg" -->
+                <img class="thumb" src="https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+1" alt="Photo 1" onclick="document.getElementById('bigImage').src='https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+1'">
+                <img class="thumb" src="https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+2" alt="Photo 2" onclick="document.getElementById('bigImage').src='https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+2'">
+                <img class="thumb" src="https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+3" alt="Photo 3" onclick="document.getElementById('bigImage').src='https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+3'">
+                <img class="thumb" src="https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+4" alt="Photo 4" onclick="document.getElementById('bigImage').src='https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+4'">
+                <img class="thumb" src="https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+5" alt="Photo 5" onclick="document.getElementById('bigImage').src='https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+5'">
+                <img class="thumb" src="https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+6" alt="Photo 6" onclick="document.getElementById('bigImage').src='https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+6'">
+                <img class="thumb" src="https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+7" alt="Photo 7" onclick="document.getElementById('bigImage').src='https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+7'">
+                <img class="thumb" src="https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+8" alt="Photo 8" onclick="document.getElementById('bigImage').src='https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+8'">
+                <img class="thumb" src="https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+9" alt="Photo 9" onclick="document.getElementById('bigImage').src='https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+9'">
+                <img class="thumb" src="https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+10" alt="Photo 10" onclick="document.getElementById('bigImage').src='https://placehold.co/800x500/1f3a5f/ffffff?text=Photo+10'">
+            </div>
+
+            <p class="sub-title">My Motto</p>
+            <div class="motto-box" id="motto">Click the button below to see my motto.</div>
+            <div class="center">
+                <!-- EDIT: change the motto text inside script.js -->
+                <button class="button" onclick="showMotto()">Show My Motto</button>
+                <button class="button" onclick="window.print()">Print My Portfolio</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ===== FOOTER / CONTACTS ===== -->
+    <footer class="footer" id="contact">
+        <h2 class="footer-title">Contact Me</h2>
+        <!-- EDIT: replace each contact detail and link, delete extra items -->
+        <div class="row">
+            <div class="contact-item">Phone: <a class="footer-link" href="tel:+630000000000">+63 000 000 0000</a></div>
+            <div class="contact-item">Email: <a class="footer-link" href="mailto:youremail@gmail.com">youremail@gmail.com</a></div>
+            <div class="contact-item">Facebook: <a class="footer-link" href="https://www.facebook.com/">Your Facebook</a></div>
+            <div class="contact-item">Instagram: <a class="footer-link" href="https://www.instagram.com/">@yourname</a></div>
+            <div class="contact-item">LinkedIn: <a class="footer-link" href="https://www.linkedin.com/">Your Name</a></div>
+            <div class="contact-item">GitHub: <a class="footer-link" href="https://github.com/">yourusername</a></div>
+            <div class="contact-item">Twitter / X: <a class="footer-link" href="https://x.com/">@yourname</a></div>
+            <div class="contact-item">TikTok: <a class="footer-link" href="https://www.tiktok.com/">@yourname</a></div>
+            <div class="contact-item">YouTube: <a class="footer-link" href="https://www.youtube.com/">Your Channel</a></div>
+            <div class="contact-item">Address: Barangay, Town, Province</div>
+        </div>
+        <p class="text">&copy; 0000 Your Full Name | <a class="footer-link" href="welcome.html">Back to Welcome Page</a></p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
